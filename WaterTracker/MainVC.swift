@@ -294,7 +294,9 @@ class MainVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, NS
         
         print(information)
         
-        guard let currentInformation = information?[0] else { return }
+//        CHANGED
+        if information.count > 0 {
+            let currentInformation = information[0]
         
         var maxAmount: Double
         
@@ -318,6 +320,8 @@ class MainVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, NS
         amountPicker.reloadAllComponents()
         print("WEIGHT: \(currentInformation.weight)")
         print("UNITS: \(currentInformation.units)")
+            
+        }
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -334,11 +338,12 @@ class MainVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, NS
         }
         
         print(total)
-        waterHeight = total
+//        waterHeight = total (CHANGED)
+        
         currentLevelLabel.text = "\(String(describing: total))"
     
 //        self.view.layoutIfNeeded()
-        self.displayWaterHeight()
+        self.displayWaterHeight(height: total)
         
 
         
