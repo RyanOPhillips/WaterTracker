@@ -126,8 +126,6 @@ class MainVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, NS
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        //        Changed
         waterHeight = NSLayoutConstraint(item: waterView, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 0, constant: 0)
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Calculate Goal", style: .plain, target: self, action: #selector(goToSetWeight))
@@ -178,8 +176,6 @@ class MainVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, NS
         
         displayWaterHeight(height: 0)
         
-        ouncesLevelLabel.text = "Goal"
-        
         currentLevelLabel.text = "0"
        
         addedArray.removeAll()
@@ -208,7 +204,7 @@ class MainVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, NS
         
         currentLevelLabel.centerXAnchor.constraint(equalTo: backView.centerXAnchor).isActive = true
         currentLevelLabel.heightAnchor.constraint(equalToConstant: 50).isActive = true
-        currentLevelLabel.widthAnchor.constraint(equalToConstant: 70).isActive = true
+//        currentLevelLabel.widthAnchor.constraint(equalToConstant: 70).isActive = true
         currentLevelLabel.centerYAnchor.constraint(equalTo: backView.centerYAnchor, constant: 75).isActive = true
         
         
@@ -232,39 +228,40 @@ class MainVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, NS
         
         ouncesLevelLabel.topAnchor.constraint(equalTo: waterImageView.topAnchor, constant: 12).isActive = true
         ouncesLevelLabel.heightAnchor.constraint(equalToConstant: 50).isActive = true
-        ouncesLevelLabel.widthAnchor.constraint(equalToConstant: 75).isActive = true
+//        ouncesLevelLabel.widthAnchor.constraint(equalToConstant: 75).isActive = true
         ouncesLevelLabel.centerXAnchor.constraint(equalTo: waterImageView.centerXAnchor, constant: -112).isActive = true
         
         completedLevelLabel.topAnchor.constraint(equalTo: waterImageView.topAnchor, constant: 12).isActive = true
         completedLevelLabel.heightAnchor.constraint(equalToConstant: 50).isActive = true
-        completedLevelLabel.widthAnchor.constraint(equalToConstant: 70).isActive = true
+//        completedLevelLabel.widthAnchor.constraint(equalToConstant: 70).isActive = true
         completedLevelLabel.centerXAnchor.constraint(equalTo: waterImageView.centerXAnchor, constant: 112).isActive = true
         
         emptyLevelLabel.topAnchor.constraint(equalTo: waterImageView.topAnchor, constant: 185).isActive = true
         emptyLevelLabel.heightAnchor.constraint(equalToConstant: 50).isActive = true
-        emptyLevelLabel.widthAnchor.constraint(equalToConstant: 70).isActive = true
+//        emptyLevelLabel.widthAnchor.constraint(equalToConstant: 70).isActive = true
         emptyLevelLabel.centerXAnchor.constraint(equalTo: waterImageView.centerXAnchor, constant: 112).isActive = true
         
         halfLevelLabel.topAnchor.constraint(equalTo: waterImageView.topAnchor, constant: 100).isActive = true
         halfLevelLabel.heightAnchor.constraint(equalToConstant: 50).isActive = true
-        halfLevelLabel.widthAnchor.constraint(equalToConstant: 70).isActive = true
+//        halfLevelLabel.widthAnchor.constraint(equalToConstant: 70).isActive = true
         halfLevelLabel.centerXAnchor.constraint(equalTo: waterImageView.centerXAnchor, constant: 112).isActive = true
     }
     
     func setupOptions() {
         titleLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         titleLabel.topAnchor.constraint(equalTo: backView.bottomAnchor, constant: 10).isActive = true
-        titleLabel.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
+//        titleLabel.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
         
         amountPicker.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         amountPicker.heightAnchor.constraint(equalToConstant: 120).isActive = true
-        amountPicker.widthAnchor.constraint(equalToConstant: 150).isActive = true
+//        amountPicker.widthAnchor.constraint(equalToConstant: 150).isActive = true
         amountPicker.topAnchor.constraint(equalTo: titleLabel.bottomAnchor).isActive = true
         
         addButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         addButton.heightAnchor.constraint(equalToConstant: 60).isActive = true
         addButton.widthAnchor.constraint(equalToConstant: 60).isActive = true
         addButton.topAnchor.constraint(equalTo: amountPicker.bottomAnchor).isActive = true
+//        addButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -100).isActive = true
     }
     
     func attemptFetch() {
