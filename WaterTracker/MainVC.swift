@@ -176,6 +176,13 @@ class MainVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, NS
     
     func clearWaterLevel(){
         
+        displayWaterHeight(height: 0)
+        
+        ouncesLevelLabel.text = "Goal"
+        
+        currentLevelLabel.text = "0"
+       
+        addedArray.removeAll()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
