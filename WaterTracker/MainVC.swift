@@ -261,7 +261,6 @@ class MainVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, NS
         addButton.heightAnchor.constraint(equalToConstant: 60).isActive = true
         addButton.widthAnchor.constraint(equalToConstant: 60).isActive = true
         addButton.topAnchor.constraint(equalTo: amountPicker.bottomAnchor).isActive = true
-//        addButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -100).isActive = true
     }
     
     func attemptFetch() {
