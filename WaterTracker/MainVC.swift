@@ -213,7 +213,7 @@ class MainVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, NS
     
     func displayWaterHeight(height: Int) {
         self.waterView.layoutIfNeeded()
-        UIView.animate(withDuration: 1) {
+        UIView.animate(withDuration: 20) {
             self.waterHeight.constant = CGFloat(height)
             self.waterView.layoutIfNeeded()
         }
@@ -224,6 +224,7 @@ class MainVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, NS
         waterView.centerXAnchor.constraint(equalTo: backView.centerXAnchor).isActive = true
         waterView.widthAnchor.constraint(equalTo: waterImageView.widthAnchor).isActive = true
         waterView.bottomAnchor.constraint(equalTo: backView.bottomAnchor, constant: -10).isActive = true
+        waterView.heightAnchor.constraint(equalTo: waterImageView.heightAnchor)
         waterHeight.isActive = true
         
         ouncesLevelLabel.topAnchor.constraint(equalTo: waterImageView.topAnchor, constant: 12).isActive = true
