@@ -2,4 +2,240 @@
 <Bucket
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WaterTracker/MainVC.swift"
+            timestampString = "528759709.558823"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "backView"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; __ObjC.UIView in variable initialization expression of WaterTracker.MainVC.backView : __ObjC.UIView"
+                  moduleName = "WaterTracker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ryanphillips/iOS%20Apps/WaterTracker/WaterTracker/MainVC.swift"
+                  timestampString = "528759710.106283"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WaterTracker.MainVC.backView.getter : __ObjC.UIView"
+                  moduleName = "WaterTracker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ryanphillips/iOS%20Apps/WaterTracker/WaterTracker/MainVC.swift"
+                  timestampString = "528759710.109724"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "106">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WaterTracker.MainVC.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; WaterTracker.MainVC"
+                  moduleName = "WaterTracker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ryanphillips/iOS%20Apps/WaterTracker/WaterTracker/MainVC.swift"
+                  timestampString = "528759710.111423"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "2008">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WaterTracker.MainVC.init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;WaterTracker.MainVC&gt;"
+                  moduleName = "WaterTracker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ryanphillips/iOS%20Apps/WaterTracker/WaterTracker/MainVC.swift"
+                  timestampString = "528759710.112765"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "1925">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WaterTracker/MainVC.swift"
+            timestampString = "528759715.6674"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "waterView"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; __ObjC.UIView in variable initialization expression of WaterTracker.MainVC.waterView : __ObjC.UIView"
+                  moduleName = "WaterTracker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ryanphillips/iOS%20Apps/WaterTracker/WaterTracker/MainVC.swift"
+                  timestampString = "528759716.089785"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WaterTracker.MainVC.waterView.getter : __ObjC.UIView"
+                  moduleName = "WaterTracker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ryanphillips/iOS%20Apps/WaterTracker/WaterTracker/MainVC.swift"
+                  timestampString = "528759716.092321"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "106">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WaterTracker.MainVC.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; WaterTracker.MainVC"
+                  moduleName = "WaterTracker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ryanphillips/iOS%20Apps/WaterTracker/WaterTracker/MainVC.swift"
+                  timestampString = "528759716.09405"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "2111">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WaterTracker.MainVC.init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;WaterTracker.MainVC&gt;"
+                  moduleName = "WaterTracker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ryanphillips/iOS%20Apps/WaterTracker/WaterTracker/MainVC.swift"
+                  timestampString = "528759716.095684"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "2028">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WaterTracker/MainVC.swift"
+            timestampString = "528759718.418142"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "waterImageView"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; __ObjC.UIImageView in variable initialization expression of WaterTracker.MainVC.waterImageView : __ObjC.UIImageView"
+                  moduleName = "WaterTracker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ryanphillips/iOS%20Apps/WaterTracker/WaterTracker/MainVC.swift"
+                  timestampString = "528759718.841351"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WaterTracker.MainVC.waterImageView.getter : __ObjC.UIImageView"
+                  moduleName = "WaterTracker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ryanphillips/iOS%20Apps/WaterTracker/WaterTracker/MainVC.swift"
+                  timestampString = "528759718.843124"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "106">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WaterTracker.MainVC.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; WaterTracker.MainVC"
+                  moduleName = "WaterTracker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ryanphillips/iOS%20Apps/WaterTracker/WaterTracker/MainVC.swift"
+                  timestampString = "528759718.844783"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "2214">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WaterTracker.MainVC.init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;WaterTracker.MainVC&gt;"
+                  moduleName = "WaterTracker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ryanphillips/iOS%20Apps/WaterTracker/WaterTracker/MainVC.swift"
+                  timestampString = "528759718.846303"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "2131">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
