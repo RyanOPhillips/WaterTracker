@@ -22,11 +22,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yTG-tY-bmb">
-                                <rect key="frame" x="90" y="84" width="140" height="240"/>
+                                <rect key="frame" x="90" y="122" width="140" height="192"/>
                                 <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="140" id="gay-9c-sul"/>
-                                    <constraint firstAttribute="height" constant="240" id="uos-ee-kD2"/>
+                                    <constraint firstAttribute="height" constant="192" id="uos-ee-kD2"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EVL-32-HoU">
@@ -63,7 +63,7 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oS5-aK-TFp">
-                                        <rect key="frame" x="119" y="110" width="42" height="21"/>
+                                        <rect key="frame" x="119" y="169.5" width="42" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -73,7 +73,7 @@
                                 <constraints>
                                     <constraint firstItem="RqQ-MQ-9ok" firstAttribute="top" secondItem="EVL-32-HoU" secondAttribute="top" constant="8" id="7DK-Lf-Rbl"/>
                                     <constraint firstAttribute="bottom" secondItem="tAU-2k-rRq" secondAttribute="bottom" constant="8" id="Cpg-Ud-AbW"/>
-                                    <constraint firstItem="oS5-aK-TFp" firstAttribute="centerY" secondItem="EVL-32-HoU" secondAttribute="centerY" id="HaK-eS-ssN"/>
+                                    <constraint firstItem="oS5-aK-TFp" firstAttribute="centerY" secondItem="EVL-32-HoU" secondAttribute="centerY" constant="60" id="HaK-eS-ssN"/>
                                     <constraint firstAttribute="trailing" secondItem="tAU-2k-rRq" secondAttribute="trailing" constant="8" id="Naq-JB-prS"/>
                                     <constraint firstAttribute="trailing" secondItem="RqQ-MQ-9ok" secondAttribute="trailing" constant="8" id="NrX-4g-K40"/>
                                     <constraint firstItem="tAU-2k-rRq" firstAttribute="leading" secondItem="Rbx-2F-QFj" secondAttribute="leading" id="PUe-ar-P4b"/>
@@ -104,7 +104,7 @@
                                 </constraints>
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xpi-QP-Zvo">
-                                <rect key="frame" x="137" y="481" width="46" height="30"/>
+                                <rect key="frame" x="137" y="476" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="addButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AQw-HH-mi8"/>
@@ -116,7 +116,7 @@
                             <constraint firstItem="yTG-tY-bmb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="38L-SL-mVS"/>
                             <constraint firstItem="EVL-32-HoU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="7qH-fK-TUp"/>
                             <constraint firstItem="BjH-cu-v7g" firstAttribute="top" secondItem="wU4-zr-njW" secondAttribute="bottom" constant="8" id="A5V-qO-f8m"/>
-                            <constraint firstItem="yTG-tY-bmb" firstAttribute="bottom" secondItem="EVL-32-HoU" secondAttribute="bottom" id="HaE-EP-WoK"/>
+                            <constraint firstItem="yTG-tY-bmb" firstAttribute="bottom" secondItem="EVL-32-HoU" secondAttribute="bottom" constant="-10" id="HaE-EP-WoK"/>
                             <constraint firstItem="wU4-zr-njW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Mr1-co-8ZI"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="wU4-zr-njW" secondAttribute="trailing" id="N7J-O1-0p9"/>
                             <constraint firstItem="BjH-cu-v7g" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RV2-kI-8Xc"/>
@@ -124,7 +124,7 @@
                             <constraint firstItem="Xpi-QP-Zvo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Wea-cA-JI9"/>
                             <constraint firstItem="EVL-32-HoU" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="cmo-Zo-s5A"/>
                             <constraint firstItem="wU4-zr-njW" firstAttribute="top" secondItem="EVL-32-HoU" secondAttribute="bottom" constant="8" id="eBr-N8-X8e"/>
-                            <constraint firstItem="Xpi-QP-Zvo" firstAttribute="top" secondItem="BjH-cu-v7g" secondAttribute="bottom" constant="20" id="r1Q-kO-PbL"/>
+                            <constraint firstItem="Xpi-QP-Zvo" firstAttribute="top" secondItem="BjH-cu-v7g" secondAttribute="bottom" constant="15" id="r1Q-kO-PbL"/>
                             <constraint firstAttribute="trailing" secondItem="EVL-32-HoU" secondAttribute="trailing" constant="20" id="xHn-nw-ia1"/>
                         </constraints>
                     </view>
@@ -158,8 +158,23 @@
                     <view key="view" contentMode="scaleToFill" id="qb5-Yg-Ib1">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WaterTracker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7lS-mF-ban">
+                                <rect key="frame" x="109" y="112" width="102" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7lS-mF-ban" firstAttribute="centerX" secondItem="qb5-Yg-Ib1" secondAttribute="centerX" id="bYJ-Ap-0ME"/>
+                            <constraint firstItem="7lS-mF-ban" firstAttribute="top" secondItem="haZ-Ba-WVI" secondAttribute="bottom" constant="48" id="tX5-fv-QhD"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="titleLabel" destination="7lS-mF-ban" id="9kg-l9-qUS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LXB-jZ-3Mm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -11,12 +11,23 @@ import CoreData
 
 protocol DataSentDelegate {
     func updateWeight(weight: Int, units: Int)
+    func calculateAmounts()
 }
 
 class WeightCalcViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, NSFetchedResultsControllerDelegate {
     
     var weights = ["Pounds (lbs)","Kilograms (kgs)"]
     var weightUnit: Int?
+    
+    @IBOutlet weak var titleLabel: UILabel! {
+        didSet {
+            titleLabel.text = "WaterTracker"
+            titleLabel.font = UIFont(name: "Avenir next", size: 40)
+            titleLabel.textColor = ColorScheme.darkPrimaryColor
+        }
+    }
+    
+    
     
     let weightText: UITextField = {
         let text = UITextField()
@@ -30,16 +41,6 @@ class WeightCalcViewController: UIViewController, UIPickerViewDelegate, UIPicker
         text.keyboardType = .numberPad
         text.translatesAutoresizingMaskIntoConstraints = false
         return text
-    }()
-    
-    let titleLabel: UILabel = {
-        let label = UILabel()
-        label.text = "WaterTracker"
-        label.font = UIFont(name: "Avenir next", size: 40)
-        label.textColor = ColorScheme.darkPrimaryColor
-        label.textAlignment = .center
-        label.translatesAutoresizingMaskIntoConstraints = false
-        return label
     }()
     
     let describeText: UITextView = {
@@ -74,7 +75,7 @@ class WeightCalcViewController: UIViewController, UIPickerViewDelegate, UIPicker
         button.translatesAutoresizingMaskIntoConstraints = false
         
         button.addTarget(self, action: #selector(setWeight), for: .touchUpInside)
-        
+
         return button
     }()
     
@@ -93,14 +94,14 @@ class WeightCalcViewController: UIViewController, UIPickerViewDelegate, UIPicker
         weightPicker.dataSource = self
         weightPicker.delegate = self
         
-        view.addSubview(weightText)
-        view.addSubview(describeText)
-        view.addSubview(saveButton)
-        view.addSubview(weightPicker)
-        view.addSubview(titleLabel)
+//        view.addSubview(weightText)
+//        view.addSubview(describeText)
+//        view.addSubview(saveButton)
+//        view.addSubview(weightPicker)
+//        view.addSubview(titleLabel)
         //        view.addSubview(describeText2)
         
-        displayWeightSection()
+//        displayWeightSection()
         //        attemptFetch()
         
         
@@ -117,10 +118,6 @@ class WeightCalcViewController: UIViewController, UIPickerViewDelegate, UIPicker
     
     func displayWeightSection() {
         
-        titleLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        titleLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 50).isActive = true
-        titleLabel.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
-        titleLabel.bottomAnchor.constraint(equalTo: weightText.topAnchor, constant: 50).isActive = true
         
         weightText.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         weightText.topAnchor.constraint(equalTo: view.topAnchor, constant: 200).isActive = true
@@ -164,6 +161,7 @@ class WeightCalcViewController: UIViewController, UIPickerViewDelegate, UIPicker
                 }
                 
                 delegate?.updateWeight(weight: Int(weight)!, units: units)
+                delegate?.calculateAmounts()
                 navigationController?.popViewController(animated: true)
                 dismiss(animated: true, completion: nil)
             }

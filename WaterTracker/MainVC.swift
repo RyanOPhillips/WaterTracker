@@ -32,8 +32,8 @@ class MainVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, NS
                 for amount in addedArray {
                     height += Double(amount)
                 }
-                height = 240 * Double(height) / maxAmount
-                height = (height < 240 ? height : 240)
+                height = 192 * Double(height) / maxAmount
+                height = (height < 192 ? height : 192)
             }
             waterHeight.constant = CGFloat(height)
         }
@@ -95,15 +95,15 @@ class MainVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, NS
     
     @IBOutlet weak var addButton: UIButton! {
         didSet {
-            addButton.layer.cornerRadius = 50
+            addButton.layer.cornerRadius = 30
             addButton.layer.borderColor = ColorScheme.lightPrimaryColor.cgColor
             addButton.layer.borderWidth = 5
             addButton.backgroundColor = .white
             addButton.setTitle("Add", for: .normal)
             addButton.setTitleColor(ColorScheme.darkPrimaryColor, for: .normal)
             addButton.titleLabel?.font = UIFont(name: "Avenir next", size: 18)
-            addButton.widthAnchor.constraint(equalToConstant: 100).isActive = true
-            addButton.heightAnchor.constraint(equalToConstant: 100).isActive = true
+            addButton.widthAnchor.constraint(equalToConstant: 60).isActive = true
+            addButton.heightAnchor.constraint(equalToConstant: 60).isActive = true
             addButton.translatesAutoresizingMaskIntoConstraints = false
         }
     }
@@ -132,17 +132,23 @@ class MainVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, NS
         let selectedPicker: Int = pickerView.selectedRow(inComponent: 0)
         addedArray.append(selectedPicker + 1)
         
+        calculateAmounts()
+        
+    }
+    
+    func calculateAmounts() {
+
         var total: Double = 0
         for amount in addedArray {
-           total += Double(amount)
+            total += Double(amount)
         }
         currentLevelLabel.text = "\(Int(total))"
-        
+
         waterView.layoutIfNeeded()
-        
+
         UIView.animate(withDuration: 20) {
-            total = 240 * Double(total) / self.maxAmount
-            total = (total < 240 ? total : 240)
+            total = 192 * Double(total) / self.maxAmount
+            total = (total < 192 ? total : 192)
             self.waterHeight.constant = CGFloat(total)
             self.waterView.layoutIfNeeded()
         }
