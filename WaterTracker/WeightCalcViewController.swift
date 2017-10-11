@@ -35,7 +35,6 @@ class WeightCalcViewController: UIViewController, UIPickerViewDelegate, UIPicker
             weightText.font = UIFont(name: "Avenir next", size: 20)
             weightText.textAlignment = .center
             weightText.text = nil
-            weightText.placeholder = "Enter Weight"
             weightText.keyboardType = .numberPad
             weightText.widthAnchor.constraint(equalToConstant: 200).isActive = true
             weightText.heightAnchor.constraint(equalToConstant: 60).isActive = true
@@ -71,7 +70,7 @@ class WeightCalcViewController: UIViewController, UIPickerViewDelegate, UIPicker
             saveButton.setTitle("Save", for: .normal)
             saveButton.setTitleColor(ColorScheme.darkPrimaryColor, for: .normal)
             saveButton.titleLabel?.font = UIFont(name: "Avenir next", size: 15)
-            saveButton.widthAnchor.constraint(equalToConstant: 60).isActive = true
+            saveButton.widthAnchor.constraint(equalToConstant: 100).isActive = true
             saveButton.heightAnchor.constraint(equalToConstant: 60).isActive = true
             
         }
@@ -80,6 +79,7 @@ class WeightCalcViewController: UIViewController, UIPickerViewDelegate, UIPicker
     
     @IBAction func saveButtonTapped(_ sender: Any) {
         
+        setWeight()
         
     }
     
@@ -118,16 +118,6 @@ class WeightCalcViewController: UIViewController, UIPickerViewDelegate, UIPicker
         weightPicker.dataSource = self
         weightPicker.delegate = self
         
-        //        view.addSubview(weightText)
-        //        view.addSubview(describeText)
-        //        view.addSubview(saveButton)
-        //        view.addSubview(weightPicker)
-        //        view.addSubview(titleLabel)
-        //        view.addSubview(describeText2)
-        
-        //        displayWeightSection()
-        //        attemptFetch()
-        
         
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(WeightCalcViewController.dismissKeyboard))
         
@@ -138,31 +128,6 @@ class WeightCalcViewController: UIViewController, UIPickerViewDelegate, UIPicker
     
     func dismissKeyboard() {
         view.endEditing(true)
-    }
-    
-    func displayWeightSection() {
-        
-        
-        weightText.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        weightText.topAnchor.constraint(equalTo: view.topAnchor, constant: 200).isActive = true
-        weightText.widthAnchor.constraint(equalToConstant: 230).isActive = true
-        weightText.heightAnchor.constraint(equalToConstant: 60).isActive = true
-        
-        saveButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        saveButton.heightAnchor.constraint(equalToConstant: 60).isActive = true
-        saveButton.widthAnchor.constraint(equalToConstant: 100).isActive = true
-        saveButton.topAnchor.constraint(equalTo: describeText.bottomAnchor, constant: 160).isActive = true
-        
-        weightPicker.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        weightPicker.heightAnchor.constraint(equalToConstant: 120).isActive = true
-        weightPicker.widthAnchor.constraint(equalToConstant: 180).isActive = true
-        weightPicker.topAnchor.constraint(equalTo: describeText.bottomAnchor).isActive = true
-        
-        describeText.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        describeText.topAnchor.constraint(equalTo: weightText.bottomAnchor).isActive = true
-        describeText.widthAnchor.constraint(equalToConstant: 200).isActive = true
-        describeText.heightAnchor.constraint(equalToConstant: 40).isActive = true
-        
     }
     
     func setWeight() {
