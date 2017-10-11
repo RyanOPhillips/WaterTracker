@@ -184,6 +184,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f7g-Ud-dyO">
                                 <rect key="frame" x="137" y="367" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="saveButtonTapped:" destination="QzW-j4-dDd" eventType="touchUpInside" id="eDd-ui-N8e"/>
+                                </connections>
                             </button>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="np1-fs-JcN">
                                 <rect key="frame" x="60" y="242" width="200" height="100"/>

@@ -165,7 +165,6 @@ class MainVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, NS
         attemptFetch()
     }
     
-    // Left Navigation Bar action
     func clearWaterLevel(){
         waterHeight.constant = 0
         currentLevelLabel.text = "0"
