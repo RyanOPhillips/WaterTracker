@@ -37,22 +37,47 @@ class WeightCalcViewController: UIViewController, UIPickerViewDelegate, UIPicker
             weightText.text = nil
             weightText.placeholder = "Enter Weight"
             weightText.keyboardType = .numberPad
-            weightText.widthAnchor.constraint(equalToConstant: 60).isActive = true
+            weightText.widthAnchor.constraint(equalToConstant: 200).isActive = true
             weightText.heightAnchor.constraint(equalToConstant: 60).isActive = true
             weightText.translatesAutoresizingMaskIntoConstraints = false
             
         }
     }
     
-    let describeText: UITextView = {
-        let describe = UITextView()
-        describe.font = UIFont(name: "Avenir next", size: 12)
-        describe.textColor = .black
-        describe.text = "Goal based on 2/3 of body weight converted into ounces"
-        describe.textAlignment = .center
-        describe.translatesAutoresizingMaskIntoConstraints = false
-        return describe
-    }()
+    @IBOutlet weak var describeText: UITextView! {
+        didSet {
+            describeText.font = UIFont(name: "Avenir next", size: 12)
+            describeText.textColor = .black
+            describeText.text = "Goal based on 2/3 of body weight converted into ounces"
+            describeText.textAlignment = .center
+            describeText.translatesAutoresizingMaskIntoConstraints = false
+            
+        }
+    }
+    
+    @IBOutlet weak var weightPicker: UIPickerView! {
+        didSet {
+            
+            
+        }
+    }
+    
+    @IBOutlet weak var saveButton: UIButton! {
+        didSet {
+            saveButton.layer.cornerRadius = 30
+            saveButton.layer.borderColor = ColorScheme.lightPrimaryColor.cgColor
+            saveButton.layer.borderWidth = 5
+            saveButton.backgroundColor = .white
+            saveButton.setTitle("Save", for: .normal)
+            saveButton.setTitleColor(ColorScheme.darkPrimaryColor, for: .normal)
+            saveButton.titleLabel?.font = UIFont(name: "Avenir next", size: 15)
+            saveButton.widthAnchor.constraint(equalToConstant: 60).isActive = true
+            saveButton.heightAnchor.constraint(equalToConstant: 60).isActive = true
+            
+        }
+    }
+    
+    
     
     //    let describeText2: UITextView = {
     //        let describe2 = UITextView()
@@ -64,28 +89,21 @@ class WeightCalcViewController: UIViewController, UIPickerViewDelegate, UIPicker
     //        return describe2
     //    }()
     
-    let saveButton: UIButton = {
-        let button = UIButton(type: .system)
-        button.layer.cornerRadius = 30
-        button.layer.borderColor = ColorScheme.lightPrimaryColor.cgColor
-        button.layer.borderWidth = 5
-        button.backgroundColor = .white
-        button.setTitle("Save", for: .normal)
-        button.setTitleColor(ColorScheme.darkPrimaryColor, for: .normal)
-        button.titleLabel?.font = UIFont(name: "Avenir next", size: 15)
-        button.translatesAutoresizingMaskIntoConstraints = false
-        
-        button.addTarget(self, action: #selector(setWeight), for: .touchUpInside)
-        
-        return button
-    }()
-    
-    let weightPicker: UIPickerView = {
-        let picker = UIPickerView()
-        
-        picker.translatesAutoresizingMaskIntoConstraints = false
-        return picker
-    }()
+//    let saveButton: UIButton = {
+//        let button = UIButton(type: .system)
+//        button.layer.cornerRadius = 30
+//        button.layer.borderColor = ColorScheme.lightPrimaryColor.cgColor
+//        button.layer.borderWidth = 5
+//        button.backgroundColor = .white
+//        button.setTitle("Save", for: .normal)
+//        button.setTitleColor(ColorScheme.darkPrimaryColor, for: .normal)
+//        button.titleLabel?.font = UIFont(name: "Avenir next", size: 15)
+//        button.translatesAutoresizingMaskIntoConstraints = false
+//
+////        button.addTarget(self, action: #selector(setWeight), for: .touchUpInside)
+//
+//        return button
+//    }()
     
     var delegate: DataSentDelegate? = nil
     
