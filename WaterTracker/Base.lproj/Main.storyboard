@@ -94,20 +94,20 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WaterTracker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wU4-zr-njW">
-                                <rect key="frame" x="109" y="332" width="102" height="21"/>
+                                <rect key="frame" x="109" y="339" width="102" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BjH-cu-v7g">
-                                <rect key="frame" x="110" y="361" width="100" height="100"/>
+                                <rect key="frame" x="110" y="368" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="IE0-DL-baL"/>
                                     <constraint firstAttribute="width" constant="100" id="IE2-DI-CuI"/>
                                 </constraints>
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xpi-QP-Zvo">
-                                <rect key="frame" x="137" y="476" width="46" height="30"/>
+                                <rect key="frame" x="137" y="478" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="addButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AQw-HH-mi8"/>
@@ -126,8 +126,8 @@
                             <constraint firstItem="wU4-zr-njW" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Tph-ve-GX3"/>
                             <constraint firstItem="Xpi-QP-Zvo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Wea-cA-JI9"/>
                             <constraint firstItem="EVL-32-HoU" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="cmo-Zo-s5A"/>
-                            <constraint firstItem="wU4-zr-njW" firstAttribute="top" secondItem="EVL-32-HoU" secondAttribute="bottom" constant="8" id="eBr-N8-X8e"/>
-                            <constraint firstItem="Xpi-QP-Zvo" firstAttribute="top" secondItem="BjH-cu-v7g" secondAttribute="bottom" constant="15" id="r1Q-kO-PbL"/>
+                            <constraint firstItem="wU4-zr-njW" firstAttribute="top" secondItem="EVL-32-HoU" secondAttribute="bottom" constant="15" id="eBr-N8-X8e"/>
+                            <constraint firstItem="Xpi-QP-Zvo" firstAttribute="top" secondItem="BjH-cu-v7g" secondAttribute="bottom" constant="10" id="r1Q-kO-PbL"/>
                             <constraint firstAttribute="trailing" secondItem="EVL-32-HoU" secondAttribute="trailing" constant="20" id="xHn-nw-ia1"/>
                         </constraints>
                     </view>
@@ -163,36 +163,36 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WaterTracker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7lS-mF-ban">
-                                <rect key="frame" x="109" y="89" width="102" height="21"/>
+                                <rect key="frame" x="109" y="104" width="102" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Weight" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="z6C-p7-VaE">
-                                <rect key="frame" x="117" y="135" width="87.5" height="17"/>
+                                <rect key="frame" x="117" y="150" width="87.5" height="17"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="WV9-7S-LO3">
-                                <rect key="frame" x="60" y="154" width="200" height="50"/>
+                                <rect key="frame" x="60" y="172" width="200" height="40"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="J2H-84-GHZ"/>
-                                    <constraint firstAttribute="height" constant="50" id="j3b-ke-eqd"/>
+                                    <constraint firstAttribute="height" constant="40" id="j3b-ke-eqd"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f7g-Ud-dyO">
-                                <rect key="frame" x="137" y="354" width="46" height="30"/>
+                                <rect key="frame" x="137" y="342" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="saveButtonTapped:" destination="QzW-j4-dDd" eventType="touchUpInside" id="eDd-ui-N8e"/>
                                 </connections>
                             </button>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="np1-fs-JcN">
-                                <rect key="frame" x="60" y="229" width="200" height="100"/>
+                                <rect key="frame" x="60" y="227" width="200" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="1KR-KH-9sw"/>
                                     <constraint firstAttribute="height" constant="100" id="5R2-JH-bJ1"/>
@@ -201,18 +201,18 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="np1-fs-JcN" firstAttribute="top" secondItem="WV9-7S-LO3" secondAttribute="bottom" constant="25" id="6Ck-Ha-Mnd"/>
+                            <constraint firstItem="np1-fs-JcN" firstAttribute="top" secondItem="WV9-7S-LO3" secondAttribute="bottom" constant="15" id="6Ck-Ha-Mnd"/>
                             <constraint firstItem="z6C-p7-VaE" firstAttribute="top" secondItem="7lS-mF-ban" secondAttribute="bottom" constant="25" id="AFU-xP-JX6"/>
                             <constraint firstItem="z6C-p7-VaE" firstAttribute="centerX" secondItem="qb5-Yg-Ib1" secondAttribute="centerX" id="NVG-ey-4fC"/>
                             <constraint firstItem="7lS-mF-ban" firstAttribute="centerX" secondItem="qb5-Yg-Ib1" secondAttribute="centerX" id="bYJ-Ap-0ME"/>
                             <constraint firstItem="WV9-7S-LO3" firstAttribute="centerX" secondItem="qb5-Yg-Ib1" secondAttribute="centerX" id="d7a-R5-N1R"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="7lS-mF-ban" secondAttribute="trailing" id="dJR-XY-gck"/>
-                            <constraint firstItem="f7g-Ud-dyO" firstAttribute="top" secondItem="np1-fs-JcN" secondAttribute="bottom" constant="25" id="fpJ-Zs-WMe"/>
+                            <constraint firstItem="f7g-Ud-dyO" firstAttribute="top" secondItem="np1-fs-JcN" secondAttribute="bottom" constant="15" id="fpJ-Zs-WMe"/>
                             <constraint firstItem="np1-fs-JcN" firstAttribute="centerX" secondItem="qb5-Yg-Ib1" secondAttribute="centerX" id="ieN-m5-bgV"/>
-                            <constraint firstItem="WV9-7S-LO3" firstAttribute="top" secondItem="z6C-p7-VaE" secondAttribute="bottom" constant="2" id="lAc-ev-ow4"/>
+                            <constraint firstItem="WV9-7S-LO3" firstAttribute="top" secondItem="z6C-p7-VaE" secondAttribute="bottom" constant="5" id="lAc-ev-ow4"/>
                             <constraint firstItem="f7g-Ud-dyO" firstAttribute="centerX" secondItem="qb5-Yg-Ib1" secondAttribute="centerX" id="mj8-bY-4g3"/>
                             <constraint firstItem="7lS-mF-ban" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="qb5-Yg-Ib1" secondAttribute="leading" id="oJu-SI-92A"/>
-                            <constraint firstItem="7lS-mF-ban" firstAttribute="top" secondItem="haZ-Ba-WVI" secondAttribute="bottom" constant="25" id="tX5-fv-QhD"/>
+                            <constraint firstItem="7lS-mF-ban" firstAttribute="top" secondItem="haZ-Ba-WVI" secondAttribute="bottom" constant="40" id="tX5-fv-QhD"/>
                         </constraints>
                     </view>
                     <connections>

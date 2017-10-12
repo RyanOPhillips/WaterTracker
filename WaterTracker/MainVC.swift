@@ -51,7 +51,7 @@ class MainVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, NS
     @IBOutlet weak var goalLabel: UILabel! {
         didSet {
             goalLabel.text = "Goal"
-            goalLabel.font = UIFont(name: "AvenirNext-Bold", size: 15)
+            goalLabel.font = UIFont(name: "AvenirNext-Bold", size: 20)
             goalLabel.textColor = ColorScheme.darkPrimaryColor
         }
     }
@@ -120,7 +120,7 @@ class MainVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, NS
                                                            target: self,
                                                            action: #selector(clearWaterLevel))
         
-        pickerView.selectRow(29, inComponent: 0, animated: true)
+        pickerView.selectRow(15, inComponent: 0, animated: true)
         attemptFetch()
     }
     
