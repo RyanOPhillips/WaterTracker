@@ -59,6 +59,15 @@ class WeightCalcViewController: UIViewController, UIPickerViewDelegate, UIPicker
     @IBOutlet weak var weightPicker: UIPickerView! {
         didSet {
             
+            if weightUnit == nil || weightUnit == 0 {
+                
+                 updateText(text: "Goal based on 2/3 of body weight converted into ounces")
+                
+            } else {
+                
+                updateText(text: "Goal based on body weight divided by 30 converted into milliliters")
+                
+            }
             
         }
     }
@@ -84,53 +93,6 @@ class WeightCalcViewController: UIViewController, UIPickerViewDelegate, UIPicker
         setWeight()
         
     }
-    
-//    func describeText0() {
-//
-//        describeText.font = UIFont(name: "Avenir next", size: 12)
-//        describeText.textColor = .black
-//        describeText.text = "Goal based on 2/3 of body weight converted into ounces"
-//        describeText.textAlignment = .center
-//        describeText.translatesAutoresizingMaskIntoConstraints = false
-//
-//    }
-//
-//    func describeText1() {
-//
-//        describeText.font = UIFont(name: "Avenir next", size: 12)
-//        describeText.textColor = .black
-//        describeText.text = "Goal based on 2/3 of body weight converted into ounces"
-//        describeText.textAlignment = .center
-//        describeText.translatesAutoresizingMaskIntoConstraints = false
-//
-//    }
-    
-    
-    //    let describeText2: UITextView = {
-    //        let describe2 = UITextView()
-    //        describe2.font = UIFont(name: "Avenir next", size: 12)
-    //        describe2.textColor = .black
-    //        describe2.text = "Goal based on body weight divided by 30 converted into milliliters"
-    //        describe2.textAlignment = .center
-    //        describe2.translatesAutoresizingMaskIntoConstraints = false
-    //        return describe2
-    //    }()
-    
-//    let saveButton: UIButton = {
-//        let button = UIButton(type: .system)
-//        button.layer.cornerRadius = 30
-//        button.layer.borderColor = ColorScheme.lightPrimaryColor.cgColor
-//        button.layer.borderWidth = 5
-//        button.backgroundColor = .white
-//        button.setTitle("Save", for: .normal)
-//        button.setTitleColor(ColorScheme.darkPrimaryColor, for: .normal)
-//        button.titleLabel?.font = UIFont(name: "Avenir next", size: 15)
-//        button.translatesAutoresizingMaskIntoConstraints = false
-//
-////        button.addTarget(self, action: #selector(setWeight), for: .touchUpInside)
-//
-//        return button
-//    }()
     
     var delegate: DataSentDelegate? = nil
     
@@ -179,17 +141,11 @@ class WeightCalcViewController: UIViewController, UIPickerViewDelegate, UIPicker
         }
     }
     
+
+    
     func updateText(text: String) {
         
-        if weightUnit == nil || weightUnit == 0 {
-            
-            describeText.text = "Goal based on 2/3 of body weight converted into ounces"
-            
-        } else {
-            
-            describeText.text = "Goal based on body weight divided by 30 converted into milliliters"
-            
-        }
+        describeText.text = text
         
     }
    
