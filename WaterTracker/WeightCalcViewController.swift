@@ -51,7 +51,7 @@ class WeightCalcViewController: UIViewController, UIPickerViewDelegate, UIPicker
             describeText.textColor = .black
             describeText.textAlignment = .center
             describeText.translatesAutoresizingMaskIntoConstraints = false
-            describeText.text = ""
+            describeText.text = "Goal based on 2/3 of body weight converted into ounces"
             
         }
     }
@@ -59,17 +59,10 @@ class WeightCalcViewController: UIViewController, UIPickerViewDelegate, UIPicker
     @IBOutlet weak var weightPicker: UIPickerView! {
         didSet {
             
-            if weightUnit == nil || weightUnit == 0 {
-                
-                 updateText(text: "Goal based on 2/3 of body weight converted into ounces")
-                
-            } else {
-                
-                updateText(text: "Goal based on body weight divided by 30 converted into milliliters")
-                
-            }
+           
             
         }
+        
     }
     
     @IBOutlet weak var saveButton: UIButton! {
@@ -164,5 +157,15 @@ class WeightCalcViewController: UIViewController, UIPickerViewDelegate, UIPicker
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         weightUnit = pickerView.selectedRow(inComponent: 0)
-    }
+        
+            if weightUnit == nil || weightUnit == 0 {
+                
+                updateText(text: "Goal based on 2/3 of body weight converted into ounces")
+                
+            } else {
+                
+                updateText(text: "Goal based on body weight divided by 30 converted into milliliters")
+                
+            }
+        }
 }
