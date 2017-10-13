@@ -12,6 +12,7 @@ import CoreData
 protocol DataSentDelegate {
     func updateWeight(weight: Int, units: Int)
     func calculateAmounts()
+    func clearWaterLevel()
 }
 
 class WeightCalcViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, NSFetchedResultsControllerDelegate {
@@ -128,6 +129,7 @@ class WeightCalcViewController: UIViewController, UIPickerViewDelegate, UIPicker
                 
                 delegate?.updateWeight(weight: Int(weight)!, units: units)
                 delegate?.calculateAmounts()
+                delegate?.clearWaterLevel()
                 navigationController?.popViewController(animated: true)
                 dismiss(animated: true, completion: nil)
             }
