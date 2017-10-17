@@ -38,6 +38,7 @@ class WeightCalcViewController: UIViewController, UIPickerViewDelegate, UIPicker
             weightText.textAlignment = .center
             weightText.text = nil
             weightText.keyboardType = .numberPad
+            weightText.returnKeyType = .done
             weightText.widthAnchor.constraint(equalToConstant: 200).isActive = true
             weightText.heightAnchor.constraint(equalToConstant: 60).isActive = true
             weightText.translatesAutoresizingMaskIntoConstraints = false
@@ -95,6 +96,7 @@ class WeightCalcViewController: UIViewController, UIPickerViewDelegate, UIPicker
         
         weightPicker.dataSource = self
         weightPicker.delegate = self
+        
         
         
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(WeightCalcViewController.dismissKeyboard))
