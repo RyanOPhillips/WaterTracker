@@ -58,6 +58,18 @@ class WeightCalcViewController: UIViewController, UIPickerViewDelegate, UIPicker
         }
     }
     
+    @IBOutlet weak var describeText: UITextView! {
+        didSet {
+            
+            describeText.font = UIFont(name: "Avenir next", size: 12)
+            describeText.textColor = .black
+            describeText.textAlignment = .center
+            describeText.translatesAutoresizingMaskIntoConstraints = false
+            describeText.text = "Or"
+            
+        }
+    }
+    
     @IBOutlet weak var weightPicker: UIPickerView! {
         didSet {
             
