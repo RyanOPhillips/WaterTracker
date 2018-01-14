@@ -184,35 +184,30 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f7g-Ud-dyO">
-                                <rect key="frame" x="137" y="437" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f7g-Ud-dyO">
+                                <rect key="frame" x="137" y="362" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="saveButtonTapped:" destination="QzW-j4-dDd" eventType="touchUpInside" id="eDd-ui-N8e"/>
                                 </connections>
                             </button>
-                            <pickerView contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="np1-fs-JcN">
-                                <rect key="frame" x="60" y="316" width="200" height="100"/>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="np1-fs-JcN">
+                                <rect key="frame" x="60" y="247" width="200" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="1KR-KH-9sw"/>
                                     <constraint firstAttribute="height" constant="100" id="5R2-JH-bJ1"/>
                                 </constraints>
                             </pickerView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Or" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ojs-E3-76s">
-                                <rect key="frame" x="40" y="242" width="240" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="np1-fs-JcN" firstAttribute="top" secondItem="WV9-7S-LO3" secondAttribute="bottom" constant="20" id="6Ck-Ha-Mnd"/>
                             <constraint firstItem="z6C-p7-VaE" firstAttribute="top" secondItem="7lS-mF-ban" secondAttribute="bottom" constant="25" id="AFU-xP-JX6"/>
                             <constraint firstItem="z6C-p7-VaE" firstAttribute="centerX" secondItem="qb5-Yg-Ib1" secondAttribute="centerX" id="NVG-ey-4fC"/>
                             <constraint firstItem="7lS-mF-ban" firstAttribute="centerX" secondItem="qb5-Yg-Ib1" secondAttribute="centerX" id="bYJ-Ap-0ME"/>
                             <constraint firstItem="WV9-7S-LO3" firstAttribute="centerX" secondItem="qb5-Yg-Ib1" secondAttribute="centerX" id="d7a-R5-N1R"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="7lS-mF-ban" secondAttribute="trailing" id="dJR-XY-gck"/>
+                            <constraint firstItem="f7g-Ud-dyO" firstAttribute="top" secondItem="np1-fs-JcN" secondAttribute="bottom" constant="15" id="fpJ-Zs-WMe"/>
                             <constraint firstItem="np1-fs-JcN" firstAttribute="centerX" secondItem="qb5-Yg-Ib1" secondAttribute="centerX" id="ieN-m5-bgV"/>
                             <constraint firstItem="WV9-7S-LO3" firstAttribute="top" secondItem="z6C-p7-VaE" secondAttribute="bottom" constant="5" id="lAc-ev-ow4"/>
                             <constraint firstItem="f7g-Ud-dyO" firstAttribute="centerX" secondItem="qb5-Yg-Ib1" secondAttribute="centerX" id="mj8-bY-4g3"/>
