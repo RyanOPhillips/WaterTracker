@@ -46,23 +46,6 @@ class WeightCalcViewController: UIViewController, UIPickerViewDelegate, UIPicker
         }
     }
     
-    @IBOutlet weak var manualText: UITextField! {
-        didSet {
-            manualText.layer.borderWidth = 5
-            manualText.layer.borderColor = ColorScheme.lightPrimaryColor.cgColor
-            manualText.layer.cornerRadius = 30
-            manualText.font = UIFont(name: "Avenir next", size: 20)
-            manualText.textAlignment = .center
-            manualText.text = nil
-            manualText.keyboardType = .numberPad
-            manualText.returnKeyType = .done
-            manualText.widthAnchor.constraint(equalToConstant: 200).isActive = true
-            manualText.heightAnchor.constraint(equalToConstant: 60).isActive = true
-            manualText.translatesAutoresizingMaskIntoConstraints = false
-            
-        }
-    }
-    
     
     @IBOutlet weak var describeText: UITextView! {
         didSet {
@@ -75,19 +58,6 @@ class WeightCalcViewController: UIViewController, UIPickerViewDelegate, UIPicker
             
         }
     }
-    
-    @IBOutlet weak var orText: UITextView! {
-        didSet {
-            
-            orText.font = UIFont(name: "Avenir next", size: 12)
-            orText.textColor = .black
-            orText.textAlignment = .center
-            orText.translatesAutoresizingMaskIntoConstraints = false
-            orText.text = "Or"
-            
-        }
-    }
-    
     
     
     @IBOutlet weak var weightPicker: UIPickerView! {
